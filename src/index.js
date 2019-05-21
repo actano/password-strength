@@ -1,1 +1,3 @@
-export * from './check-password-strength'
+import checkPassword from './check-password-strength'
+
+export default checkPassword
