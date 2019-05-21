@@ -5,8 +5,7 @@
   "main": "src/check-password-strength.js",
   "repository": "https://github.com/actano/password-strength.git",
   "author": "Actano GmbH (https://rplan.com/)",
-  "license": "MIT",
-  "private": "UNLICENSED",
+  "license": "UNLICENSED",
   "devDependencies": {
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.4",
