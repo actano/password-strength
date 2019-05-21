@@ -1,0 +1,22 @@
+{
+  "name": "@rplan/password-strength",
+  "version": "0.1.0",
+  "description": "This package provides a set of rules for passwords.",
+  "main": "src/check-password-strength.js",
+  "repository": "https://github.com/actano/password-strength.git",
+  "author": "Actano GmbH (https://rplan.com/)",
+  "license": "MIT",
+  "private": "UNLICENSED",
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/register": "^7.4.4",
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4"
+  },
+  "scripts": {
+    "test": "mocha --exit './test/**/*.js'"
+  }
+}
