@@ -5,7 +5,7 @@ A set of rules to check the strength of a password.
 ```
 yarn add @rplan/password-strength
 ```
-In code it return true if the password fulfills the required rules or false if it violates one or more rules.
+It returns true if the password fulfills the required rules or false if it violates one or more rules.
 ```
 import checkPasswordStrength from '@rplan/password-strength'
 
