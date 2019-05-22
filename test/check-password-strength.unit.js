@@ -16,18 +16,4 @@ describe('check password strength', () => {
       expect(checkPasswordStrength(invalidPassword)).to.equal(false)
     })
   })
-
-  context('password does not have lowercase letters', () => {
-    it('should return false', () => {
-      const invalidPassword = 'ABCDEF78'
-      expect(checkPasswordStrength(invalidPassword)).to.equal(false)
-    })
-  })
-
-  context('password does not have uppercase letters', () => {
-    it('should return false', () => {
-      const invalidPassword = 'abcdef78'
-      expect(checkPasswordStrength(invalidPassword)).to.equal(false)
-    })
-  })
 })
