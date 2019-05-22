@@ -1,6 +1,10 @@
 # Password strength
 A set of rules to check the strength of a password.
 
+## Rules for strong password
+* minimum length of 8 characters
+* at least one number
+
 ## How to use
 ```
 yarn add @rplan/password-strength
