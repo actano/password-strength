@@ -16,4 +16,11 @@ describe('check password strength', () => {
       expect(checkPasswordStrength(invalidPassword)).to.equal(false)
     })
   })
+
+  context('password without numbers', () => {
+    it('should return false', () => {
+      const invalidPassword = 'abcDEFgh'
+      expect(checkPasswordStrength(invalidPassword)).to.equal(false)
+    })
+  })
 })
