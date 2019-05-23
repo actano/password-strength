@@ -18,9 +18,9 @@
   },
   "scripts": {
     "test": "mocha --exit './test/**/*.js'",
-    "build": "npx babel -d lib src",
+    "build": "./node_modules/.bin/babel -d lib src",
     "clean": "rm -rf lib",
-    "prepublish": "yarn run clean && yarn run build"
+    "prepublishOnly": "yarn run clean && yarn run build"
   },
   "files": [
     "lib",
