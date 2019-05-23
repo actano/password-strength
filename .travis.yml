@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+  - '8'
+  - '10'
+  - '12'
+cache: yarn
+deploy:
+  provider: npm
+  email: rplan-ci@actano.de
+  api_key:
+    secure: BaTdFZMBeOAUmLbs6koaHFtL/TuHnZUtaJMqEqN9ron6BgYrFcey1Ym3pCN49fFWXS++0bPqCmru2lTNzgt9poINLn4tZK8E0OgyBdBZ0sjhbhNAv9sy8oAoq7q6Q0JJxj10okINzIh+6Pujr1+sF+WdUsygh0RN4u7h45lRSGTSCfuAc4WI/sgzMBxIPt4J3hRf3FGWqw7XqO8x5SxODw69Mi8IVGeribMB8+dD3/m/PbsTmUMOdaavhL6V6JUwPPfNo9C103S9lHd32T07DipBNQ8tza0rIU2u6VvX6R6lNessm0Y12dkwjEzywpX+Lhr/rSxjt6lPRI82+z+NQN6NHK0sQcocoFqU69YrvRIyxgM9cWl5kIaqfcfvoiVriEYUV7C6WME4S/+Y0GbRZmQDWRugKzPckRw9ewatX32kDFq5QEBs0iDItThTy5ZnPPON9CDZs0k45Gxmf4C9odbzf9NJY7GcI/bmfMLCzcr9JizpLO3sw98m3Bxz/DieOqRebZWffGNDjL53eVwA2vFO9VOXavmD73y4RKo/GTgb+037Quccuu/3UY3F6UGmBqsZXO6YVb+UGgyyPOWDy189bejUwRB8S6b2I1vZiM9uJul2ZhxtpYVFw2c3LDgXuQDMiwM+xVT7ilUT8kjwekv7Az6lvusioMglwfLy1Kg=
+  on:
+    tags: true
+    repo: actano/password-strength
