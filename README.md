@@ -5,7 +5,7 @@ A set of rules to check the strength of a password.
 * minimum length of 8 characters
 * at least one number
 
-## How to use
+## How to use it
 ```
 yarn add @rplan/password-strength
 ```
