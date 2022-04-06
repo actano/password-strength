@@ -12,6 +12,7 @@ pipeline {
             script {
               npm.withAuth() {
                 sh "npm install"
+                sh "npm run build"
               }
             }
           }
