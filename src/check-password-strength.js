@@ -1,11 +1,5 @@
-const MINIMAL_LENGTH = 8
-const NUMBERS = /\d/
+const passwordRegex = /^(?=.*[!@#$&*].*[!@#$&*])(?=.*[0-9])(?=.*\w.*\w).{10,30}$/
 
-const checkPasswordStrength = (password) => {
-  const hasMinimalLength = password.length >= MINIMAL_LENGTH
-  const hasNumber = NUMBERS.test(password)
-
-  return hasMinimalLength && hasNumber
-}
+const checkPasswordStrength = (password) => passwordRegex.test(password)
 
 export default checkPasswordStrength

@@ -5,7 +5,7 @@ import checkPasswordStrength from '../src/check-password-strength'
 describe('check password strength', () => {
   context('password fulfilling all requirements', () => {
     it('should return true', () => {
-      const validPassword = 'abcDEF789'
+      const validPassword = 'abcDEF$#789'
       expect(checkPasswordStrength(validPassword)).to.equal(true)
     })
   })
@@ -20,6 +20,13 @@ describe('check password strength', () => {
   context('password without numbers', () => {
     it('should return false', () => {
       const invalidPassword = 'abcDEFgh'
+      expect(checkPasswordStrength(invalidPassword)).to.equal(false)
+    })
+  })
+
+  context('password without special characters', () => {
+    it('should return false', () => {
+      const invalidPassword = 'abcDEFgh456'
       expect(checkPasswordStrength(invalidPassword)).to.equal(false)
     })
   })
