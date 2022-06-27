@@ -2,11 +2,19 @@ import { expect } from 'chai'
 
 import checkPasswordStrength from '../src/check-password-strength'
 
+const allowedSpecialCharacters = '^!"#$%&\'()*+,-.:;<=>?@[\\]^_`{|}~';
+
 describe('check password strength', () => {
   context('password fulfilling all requirements', () => {
     it('should return true', () => {
       const validPassword = 'abcDEF$#789'
       expect(checkPasswordStrength(validPassword)).to.equal(true)
+    })
+    allowedSpecialCharacters.split('').forEach((chr) => {
+      it(`should return true with ${chr} special characters`, () => {
+        const validPassword = `abcDEF\$789${chr}`
+        expect(checkPasswordStrength(validPassword)).to.equal(true)
+      })
     })
   })
 
