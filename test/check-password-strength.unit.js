@@ -2,7 +2,7 @@ import { expect } from 'chai'
 
 import checkPasswordStrength from '../src/check-password-strength'
 
-const allowedSpecialCharacters = '^!"#$%&\'()*+,-.:;<=>?@[\\]^_`{|}~';
+const allowedSpecialCharacters = '/!"#$%&\'()*+,-.:;<=>?@[\\]^_`{|}~';
 
 describe('check password strength', () => {
   context('password fulfilling all requirements', () => {
