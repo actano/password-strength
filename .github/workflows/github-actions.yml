@@ -59,7 +59,7 @@ jobs:
         uses: actano/slack-action@master
         env:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_TOKEN }}
-          SLACK_CHANNEL: "allex-ci"
+          SLACK_CHANNEL: "a-team-ci"
           GITHUB_TOKEN: ${{ secrets.ACTANO_GITHUB_TOKEN }}
           GITHUB_RUN_ID: ${{ github.run_id }}
           REPO_OWNER: ${{ github.repository_owner }}
