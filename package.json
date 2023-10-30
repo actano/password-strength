@@ -1,6 +1,6 @@
 {
   "name": "@rplan/password-strength",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "This package provides a set of rules for passwords.",
   "module": "src/index.js",
   "main": "lib/index.js",
