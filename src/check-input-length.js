@@ -1,4 +1,4 @@
-import { InputType } from "./types"
+import { InputType } from './types'
 
 const checkInputLength = (type, input) => {
   switch (type) {
@@ -9,7 +9,7 @@ const checkInputLength = (type, input) => {
       return input.length <= 64
 
     default:
-      return true
+      throw new Error('Wrong input type')
   }
 }
 
