@@ -31,7 +31,7 @@ describe('check input length', () => {
   context('check input length with unsupported type', () => {
     it('should throw an error', () => {
       const unsupportedType = 'UnsupportedType'
-      expect(() => checkInputLength(unsupportedType, 'input')).to.throw('Wrong input type')
+      expect(() => checkInputLength(unsupportedType as InputType, 'input')).to.throw('Wrong input type')
     })
   })
 })
