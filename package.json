@@ -10,15 +10,10 @@
   "author": "Actano GmbH (https://rplan.com/)",
   "license": "UNLICENSED",
   "devDependencies": {
-    "@babel/cli": "^7.19.3",
-    "@babel/core": "^7.20.5",
-    "@babel/node": "^7.20.5",
-    "@babel/preset-env": "^7.20.2",
-    "@babel/register": "^7.18.9",
     "@rplan/allex-shared-config": "^2.0.0",
     "@types/mocha": "^10.0.6",
-    "chai": "^4.3.7",
-    "mocha": "^6.2.3",
+    "chai": "^5.1.0",
+    "mocha": "^10.4.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.3"
   },
