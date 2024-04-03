@@ -1,6 +1,6 @@
 import { InputType } from './types'
 
-const checkInputLength = (type, input) => {
+const checkInputLength = (type: InputType, input: string): boolean => {
   switch (type) {
     case InputType.Email:
       return input.length <= 255

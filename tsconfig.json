@@ -1,0 +1,7 @@
+{
+  "extends": "@rplan/allex-shared-config/tsconfig/library",
+  "compilerOptions": {
+    "rootDir": "."
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "test/**/*.ts", "test/**/*.tsx"]
+}

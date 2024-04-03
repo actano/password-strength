@@ -2,8 +2,10 @@
   "name": "@rplan/password-strength",
   "version": "0.3.0",
   "description": "This package provides a set of rules for passwords.",
-  "module": "src/index.js",
+  "module": "lib/index.js",
   "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "allex-ts-source": "src/index.ts",
   "repository": "https://github.com/actano/password-strength.git",
   "author": "Actano GmbH (https://rplan.com/)",
   "license": "UNLICENSED",
@@ -13,19 +15,27 @@
     "@babel/node": "^7.20.5",
     "@babel/preset-env": "^7.20.2",
     "@babel/register": "^7.18.9",
+    "@rplan/allex-shared-config": "^2.0.0",
     "chai": "^4.3.7",
-    "mocha": "^6.2.3"
+    "mocha": "^6.2.3",
+    "typescript": "^5.4.3"
   },
   "scripts": {
+    "build": "allex-build build",
+    "build:clean": "npm run clean && npm run build",
+    "build:src:watch": "allex-build build --watch",
+    "clean": "allex-build clean",
     "test": "mocha --exit './test/**/*.js'",
-    "build": "./node_modules/.bin/babel -d lib src",
-    "clean": "rm -rf lib",
-    "prepublishOnly": "yarn run clean && yarn run build"
+    "typecheck": "tsc --noEmit --skipLibCheck"
   },
   "files": [
     "lib",
     "src",
     "index.d.ts"
   ],
-  "types": "index.d.ts"
+  "allex-config": {
+    "build": {
+      "type": "library"
+    }
+  }
 }
