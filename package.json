@@ -8,14 +8,6 @@
   "repository": "https://github.com/actano/password-strength.git",
   "author": "Actano GmbH (https://rplan.com/)",
   "license": "UNLICENSED",
-  "devDependencies": {
-    "@rplan/allex-shared-config": "^2.0.0",
-    "@types/mocha": "^10.0.6",
-    "chai": "^4.3.4",
-    "mocha": "^10.4.0",
-    "ts-node": "^9.1.1",
-    "typescript": "^5.4.3"
-  },
   "scripts": {
     "build": "allex-build build",
     "build:clean": "npm run clean && npm run build",
@@ -23,6 +15,14 @@
     "clean": "allex-build clean",
     "test": "mocha",
     "typecheck": "tsc --noEmit --skipLibCheck"
+  },
+  "devDependencies": {
+    "@rplan/allex-shared-config": "^2.0.0",
+    "@types/mocha": "^10.0.7",
+    "chai": "^5.1.1",
+    "mocha": "^10.7.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
   },
   "files": [
     "lib",
