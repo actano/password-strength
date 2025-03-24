@@ -16,7 +16,7 @@ jobs:
       WEBCLIENTNAME: ${{ env.WEBCLIENTNAME }}
     strategy:
       matrix:
-        node_version: [20]
+        node_version: [22]
     steps:
       - name: Checkout
         uses: actions/checkout@v3
